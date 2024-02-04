@@ -3,37 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Clothing.co</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<img src="background.jpg" alt="img">    
-<div class="container">   
     
-    <p>
-        This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started
-        You know you want to.
-    </p>
-    <form action="" method="post" class="signup-form">
-        <label for="firstName">FIRST NAME:</label>
-        <input type="text" id="firstName" name="firstName" required>
+<div class="container">
+    <div class="left-frame">
+        <img src="background.jpg" alt="img" >
+        <span class="logo">Clothing Co.</span>
+    </div>
+        <div class="right-frame">
+            <p>
+                Dress to impress, radiate confidence! it's time to redefine your fashion narrative with us!
+            </p>
+            <form action="" method="post" class="signup-form">
+                <fieldset>
+                   <div class="input-group">
+                    <input type="text" id="firstName" name="firstName" placeholder="FIRST NAME" required>
 
-        <label for="LastName">LAST NAME:</label>
-        <input type="text" id="LastName" name="LastName" required>
+                    <input type="text" id="LastName" name="LastName" placeholder="LAST NAME" required>
+                    </div>
+                </fieldset>
 
-        <label for="email">EMAIL:</label>
-        <input type="text" id="email" name="email" required>
+                <fieldset>
+                    <div class="input-group">
+                    <input type="email" id="email" name="email" placeholder="E-MAIL" required>
+            
+                    <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="PHONE NUMBER" minlength="11" maxlength="11" min="1" required>
+                    </div>
+                </fieldset>
 
-        <label for="phoneNumber">PHONE NUMBER</label>
-        <input type="text" id="phoneNumber" name="phoneNumber" required>
-
-        <label for="password">PASSWORD:</label>
-        <input type="text" id="password" name="password" required>
-
-        <label for="confirmPassword">CONFIRM PASSWORD:</label>
-        <input type="text" id="confirmPassword" name="confirmPassword" required>
-
-    </form>
+                <fieldset>
+                    <div class="input-group">
+                    <input type="password" id="password" name="password" placeholder="PASSWORD" required>
+                    
+                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="CONFIRM PASSWORD" required>
+                    </div>
+                </fieldset>
+            </form> 
+                <div class="create-account"> 
+                    <button class ="create-button" type="submit">Create Account</button>
+                    <p class="login">Already have account?<a href=""> Login.</a></p>
+                </div>
+        </div>
 </div> 
 </body>
 </html>
